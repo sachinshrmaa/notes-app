@@ -1,13 +1,117 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.main-container{
+  min-height: 100vh;
+  display: flex;
+}
+
+.sidebar{
+  background-color: #fbfbfb;
+  min-width: 100px;
+  text-align: center;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-logo{
+  color: #000;
+  font-size: 42px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.bi-plus-circle{
+  font-size: 30px;
+  font-weight: 700;
+  color: #2f2f2f;
+}
+
+
+.content-container{
+  width: 100%;
+}
+
+.top-navbar{
+  text-align: center;
+  height: 40px;
+  padding: 13px 0;
+  background-color: #fff;
+  box-shadow: 13px 0px 15px 5px #f3f3f3;
+}
+
+.notes-container{
+  padding: 20px;
+}
+
+.search-field{
+  height: 35px;
+  width: 500px;
+  border: 0px;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding: 0 10px;
+  background-color: #f3f3f3;
+}
+
+.search-btn{
+  height: 35px;
+  width: 100px;
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color:#3E54AC;
+  color: #fff;
+  font-size: 15px;
+}
+
+
+.page-heading{
+  font-size: 40px;
+  margin: 20px 0 10px 20px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.notes-container{
+  display: grid;
+  grid-template-columns: repeat(4, 23%);
+  grid-gap: 20px;
+}
+
+.note-card{
+  border:1px solid #fff;
+  border-radius: 8px;
+  padding: 14px;
+  min-height: 150px;
+  /* min-width: 200px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 1px 0px 15px 5px #f3f3f3;
+}
+
+.note-card:hover{
+  border: 1px solid #7fd7ff;
+}
+
+.note-text{
+  margin:0;
+  margin-bottom: 10px;
+}
+
+.note-footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.bi-trash3{
+  margin-left: 15px;
 }
